@@ -170,7 +170,8 @@ class WickedPdf
                                       viewport_size
                                       window_status])
         r += make_options(options, %i[cookie
-                                      post], '', :name_value)
+                                      post
+                                      allow], '', :name_value)
         r += make_options(options, %i[redirect_delay
                                       zoom
                                       page_offset

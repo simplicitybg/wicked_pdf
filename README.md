@@ -191,7 +191,7 @@ class ThingsController < ApplicationController
                # define as true the key 'disable_local_file_access' or 'enable_local_file_access', not both
                disable_local_file_access:      true,
                enable_local_file_access:       false,                     # must be true when using wkhtmltopdf > 0.12.6
-
+               allow:                          ['/path1', '/path2'],      # Allow only listed paths to be accessible, while full local access is disabled. Could be an array or a single string
                disable_smart_shrinking:        true,
                use_xserver:                    true,
                background:                     false,                     # background needs to be true to enable background colors to render
